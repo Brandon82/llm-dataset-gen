@@ -17,5 +17,6 @@ dataset = LLMDatasetMgr(dataset_path=data_filepath)
 ```
 3. Call the add_data method with context and number of samples to add to the dataset:
 ```python
-    dataset.add_data(context=dataset_context, num_samples=20)
+dataset_context="For Context, this dataset represents requirements engineering excerpts and their corresponding Language Construct (LC) and Language Quality (LQ) codings"
+dataset.add_data(context=dataset_context, num_samples=20)
 ```
