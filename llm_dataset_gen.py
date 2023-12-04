@@ -23,7 +23,7 @@ class LLMDatasetMgr:
 
     def add_data(self, context, model="gpt-4-1106-preview", num_samples=1):
         self.dataset_description = f"I have a dataset with columns: {self.dataset_columns}. Your task is to add {num_samples} more row(s) of data to this dataset. Provide the data as a json object, which should match the structure of the dataset. Wrap the entire response in a json object with the key 'data'."
-        print(f"Dataset Description: {self.dataset_description}")
+        print(f"\nDataset Description: {self.dataset_description}")
         response = self.client.chat.completions.create(
             model=model,
             response_format={ "type": "json_object" },
@@ -34,7 +34,7 @@ class LLMDatasetMgr:
             ]
         )
         response_text = response.choices[0].message.content
-        print(f"Response: {response_text}")
+        print(f"\nResponse: {response_text}")
         self.save_data(response_text)
 
     def process_data(self, generated_data):
@@ -60,5 +60,5 @@ class LLMDatasetMgr:
         self.dataset.to_csv(self.dataset_path, index=False)
 
     def print_attributes(self):
-        print(f"Datset Columns: {self.dataset_columns}")
+        print(f"\nDatset Columns: {self.dataset_columns}")
 
