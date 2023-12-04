@@ -1,6 +1,6 @@
 # llm-dataset-gen
 Provides a `LLMDatasetMgr` class for generating and adding data to datasets using LLMs (OpenAI API)
-- Supported file types for dataset files: `.csv`
+> Supported file types for dataset files: `.csv`
 
 ## Installation
 Install the following packages:
@@ -17,8 +17,8 @@ from utils import create_and_save_empty_dataset
 dataset_columns = ["ID", "Excerpt", "Comment"]
 create_and_save_empty_dataset(columns=dataset_columns, filename="./data/Dataset.csv")
 ```
-- This function supports the following file types: `.csv`
-- You can skip this step if you already have a dataset file
+> This function supports the following file types: `.csv`
+> You can skip this step if you already have a dataset file
 2. Create an instance of the `LLMDatasetMgr` class and pass in a `dataset_path`:
 ```python
 data_filepath = "./data/Dataset.csv"
@@ -29,6 +29,6 @@ dataset = LLMDatasetMgr(dataset_path=data_filepath)
 dataset_context="For Context, this dataset represents requirements engineering excerpts and their corresponding Language Construct (LC) and Language Quality (LQ) codings"
 dataset.add_data(context=dataset_context, num_samples=20)
 ```
-- The `add_data` method will automatically overwrite/save the dataset file after appending the new data
-- The `context` parameter is the prompt that will be used to generate the data
-- The `num_samples` parameter is the number of data samples to generate and add to the dataset
+> The `add_data` method will automatically overwrite/save the dataset file after appending the new data
+> The `context` parameter is the prompt that will be used to generate the data
+> The `num_samples` parameter is the number of data samples to generate and add to the dataset
