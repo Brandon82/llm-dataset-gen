@@ -1,14 +1,17 @@
 from dotenv import load_dotenv
 from utils import *
-from llm_dataset_gen import LLMDatasetMgr
+from llm_dataset_mgr import LLMDatasetMgr
 
 if __name__ == "__main__":
     load_dotenv()
 
-    # To create an empty dataset, provide the column names and the filename and call initialize_empty_dataset
-    # dataset_columns = ["ID", "Excerpt", "LC Code", "LQ Code", "Comment"]
-    # initialize_empty_dataset(columns=dataset_columns, filename=data_filepath)
+    # To create an empty dataset, provide the column names and the filepath and call create_and_save_empty_dataset
+    # Supported file types: .csv
+    data_filepath = "./data/LC_Dataset2.csv"
+    dataset_columns = ["ID", "Excerpt", "LC Code", "LQ Code", "Comment"]
+    create_and_save_empty_dataset(columns=dataset_columns, filepath=data_filepath)
 
+    """
     definitions = {
         "symbol": "A Symbol (represented as SY) is a Noun or set of nouns acting as a substantial representation of the concept meant. The symbol stands for and represents the concept.",
         "concept": "A Concept (represented as CO) is a Noun or set of nouns introducing new intrinsic or mutual properties.",
@@ -28,3 +31,4 @@ if __name__ == "__main__":
     print(f"\nDataset Context: {dataset_context}")
 
     dataset.add_data(context=dataset_context, num_samples=10)
+    """
