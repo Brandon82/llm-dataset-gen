@@ -5,11 +5,7 @@ from llm_dataset_mgr import LLMDatasetMgr
 if __name__ == "__main__":
     load_dotenv()
 
-    # To create an empty dataset, provide the column names and the filepath and call create_and_save_empty_dataset
-    # Supported file types: .csv
-    # data_filepath = "./data/LC_Dataset2.csv"
-    # dataset_columns = ["ID", "Excerpt", "LC Code", "LQ Code", "Comment"]
-    # create_and_save_empty_dataset(columns=dataset_columns, filepath=data_filepath)
+    # To create an empty dataset, use the create_dataset.py script
 
     definitions = {
         "symbol": "A Symbol (represented as SY) is a Noun or set of nouns acting as a substantial representation of the concept meant. The symbol stands for and represents the concept.",
