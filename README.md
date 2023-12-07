@@ -16,9 +16,7 @@ from utils import create_and_save_empty_dataset
 dataset_columns = ["ID", "Excerpt", "Comment"]
 create_and_save_empty_dataset(columns=dataset_columns, filename="./data/Dataset.csv")
 ```
-> Check create_dataset.py for an example
-
-> You can skip this step if you already have a dataset file
+> Check create_dataset.py for an example. You can skip this step if you already have a dataset file
 
 **3. Create an instance of the `LLMDatasetMgr` class and pass in a `dataset_path`:**
 ```python
