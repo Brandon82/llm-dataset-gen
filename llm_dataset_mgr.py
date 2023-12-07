@@ -21,11 +21,12 @@ class LLMDatasetMgr:
         self.dataset = pd.read_csv(file_path)
         self.dataset_columns = ', '.join(self.dataset.columns.tolist())
 
-    def add_data(self, context, model="gpt-4-1106-preview", num_samples=1):
+    def add_data(self, context, model="gpt-4-1106-preview", num_samples=1, max_tokens=2000):
         self.dataset_description = f"I have a dataset with columns: {self.dataset_columns}. Your task is to add {num_samples} more row(s) of data to this dataset. Provide the data as a json object, which should match the structure of the dataset. Wrap the entire response in a json object with the key 'data'."
         print(f"\nDataset Description: {self.dataset_description}")
         response = self.client.chat.completions.create(
             model=model,
+            max_tokens=max_tokens,
             response_format={ "type": "json_object" },
             messages=[
                 {"role": "system", "content": "You are a helpful assistant used to generate data for datasets."},
