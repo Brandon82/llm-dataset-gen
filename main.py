@@ -18,11 +18,11 @@ if __name__ == "__main__":
 
     # The LLMDatasetMgr Class automatically creates a dataset_description, which describes the column names for the given dataset so that the LLM can generate data in a format that matches the dataset
     # However, you should also provide an additional context whenever calling add_data, which further describes the data that should be added to the dataset
-    dataset_context = f"For Context, the dataset represents requirements engineering excerpts and their corresponding Language Construct (LC) and Language Quality (LQ) codings, as described by a research paper titled 'Language quality in requirements development: tracing communication in the process of information systems development'. Language Construct (LC) represents the linguistic construction of a symbol-concept relationship that can be observed during the language development process. LC Codings may contain concepts (CO) and symbols (SY). {definitions['concept']} {definitions['symbol']} The LC Codings are represented by the 'SY1, SY2, CO1, and CO2' columns in the dataset. If the generated data does not have 2 symbols and 2 concepts, leave the entry empty. The dataset contains 4 types of language quality issues: incompleteness (INC), meaningless (MLN), redundancy (RDC), and ambiguity (AMB). For the generated data, ensure the Language Quality (LQ Code) is 'ambiguity'. {definitions['ambiguity']} For the comment, provide a brief description of the language quality issue. Ensure each generated Excerpt is unique."
+    dataset_context = f"For Context, the dataset represents requirements engineering excerpts and their corresponding Language Construct (LC) and Language Quality (LQ) codings, as described by a research paper titled 'Language quality in requirements development: tracing communication in the process of information systems development'. Language Construct (LC) represents the linguistic construction of a symbol-concept relationship that can be observed during the language development process. LC Codings may contain concepts (CO) and symbols (SY). {definitions['concept']} {definitions['symbol']} The LC Codings are represented by the 'SY1, SY2, CO1, and CO2' columns in the dataset. If the generated data does not have 2 symbols and 2 concepts, leave the entry empty. The dataset contains 4 types of language quality issues: incompleteness (INC), meaningless (MLN), redundancy (RDC), and ambiguity (AMB). For the generated data, ensure the Language Quality (LQ Code) is 'redundancy'. {definitions['redundancy']} Ensure each generated Excerpt is unique."
     
-    data_filepath = "./data/LC_Dataset2.csv"
+    data_filepath = "./data/LC_Dataset3.csv"
     dataset = LLMDatasetMgr(dataset_path=data_filepath)
     dataset.print_attributes()
     print(f"\nDataset Context: {dataset_context}")
 
-    dataset.add_data(context=dataset_context, num_samples=20)
+    dataset.add_data(context=dataset_context, num_samples=50)

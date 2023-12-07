@@ -1,0 +1,101 @@
+ID,Excerpt,SY1,SY2,CO1,CO2,LQ Code
+1,The system must provide user account creation as well as user profile generating capabilities,system,capabilities,account creation,profile generation,RDC
+2,A method to search and a feature to find information should be available,method,feature,search,find information,RDC
+3,Members should have the ability to sign in or log into the platform,ability,platform,sign in,log in,RDC
+4,The application is required to process payments and handle transaction management,application,management,process payments,handle transactions,RDC
+5,An option to reset passwords and a way to recover accounts should exist,option,way,reset passwords,recover accounts,RDC
+6,User access logs and user activity tracking should be compiled,logs,tracking,access,activity,RDC
+7,The platform shall offer customer support and provide helpdesk services,platform,services,customer support,helpdesk,RDC
+8,Real-time notifications and instant updates need to be implemented at all times,notifications,updates,real-time,instant,RDC
+9,The software has to ensure data backup and information preservation,software,preservation,data backup,information,RDC
+10,"For administration, control panel features and management tools must be provided",control panel,management tools,administration,features,RDC
+11,The system's storage capacity and data retention capabilities are to be expanded,system's storage,capabilities,capacity,data retention,RDC
+12,Users will be able to upload content and also post material on the site,upload,post,content,material,RDC
+13,The service must facilitate the dissemination of information and distribution of news,service,distribution,dissemination,news,RDC
+14,Reports should be auto-generated and dashboards must be dynamically updated,Reports,dashboards,auto-generated,dynamically updated,RDC
+15,The product will ensure confidentiality of data and safeguard privacy of users,product,safeguard,confidentiality,privacy,RDC
+16,Widgets for user interface customization and tools for UI personalization shall be present,Widgets,tools,customization,personalization,RDC
+17,User experience optimization and user interface enhancements are to be considered,optimization,enhancements,user experience,user interface,RDC
+18,A secure checkout process and a safe payment system must be designed,checkout process,payment system,secure,safe,RDC
+19,A robust error handling mechanism and a solid exception management framework need to be in place,mechanism,framework,error handling,exception management,RDC
+20,User sessions should be efficiently managed and session data must be properly controlled,managed,controlled,User sessions,session data,RDC
+21,Network connectivity issues and internet access problems must be addressed,Network connectivity,internet access,issues,problems,RDC
+22,File upload limitations and document submission restrictions should be documented,limitations,restrictions,File upload,document submission,RDC
+23,The software shall allow batch processing as well as bulk operations execution,software,operations,batch processing,bulk execution,RDC
+24,There should be an audit trail for monitoring and a tracking system for oversight,audit trail,tracking system,monitoring,oversight,RDC
+25,Redundant data entry and duplicate record submission must be eliminated,data entry,record submission,Redundant,duplicate,RDC
+26,It is essential for the platform to maintain a history of user activities as well as keep a log of user actions,history,log,user activities,user actions,RDC
+27,Information retrieval and data fetching should be optimized for performance,Information retrieval,data fetching,optimized,performance,RDC
+28,The service will offer encryption for security and coding for protection,encryption,coding,security,protection,RDC
+29,Servers hosting the application and machines running the software require frequent updates,Servers,machines,hosting,running,RDC
+30,The management dashboard and the control interface need user-friendly designs,management dashboard,control interface,user-friendly,designs,RDC
+31,Data synchronization across devices and information alignment amongst systems is required,synchronization,alignment,across devices,amongst systems,RDC
+32,The system's capacity for processing requests and its ability to handle queries must be improved,system's capacity,ability,processing requests,handle queries,RDC
+33,Data export functions and information sharing features should be enhanced,Data export,information sharing,functions,features,RDC
+34,Automated alerts and programmed notifications should be sent in a timely manner,Automated alerts,programmed notifications,sent,timely manner,RDC
+35,It is imperative to have a backup solution and a redundancy plan in place for data safety,backup solution,redundancy plan,data safety,,RDC
+36,"In case of service failure, a failover mechanism and a recovery strategy should be activated",failover mechanism,recovery strategy,service failure,,RDC
+37,The software architecture must support scalability and also permit expansion,software architecture,,scalability,expansion,RDC
+38,There needs to be a comprehensive guide for users and a detailed manual for operations,guide,manual,users,operations,RDC
+39,Interactive tutorials for learning and instructional videos for education must be available,tutorials,videos,learning,education,RDC
+40,The application will feature data encryption as well as ensure data privacy,feature,ensure,data encryption,data privacy,RDC
+41,The inclusion of a spam filter and the addition of a junk mail blocker are necessary,inclusion,addition,spam filter,junk mail blocker,RDC
+42,Performance metrics and operational statistics should be monitored regularly,metrics,statistics,Performance,operational,RDC
+43,A method for reporting issues and a channel for communicating problems must be established,method,channel,reporting issues,communicating problems,RDC
+44,Regular data backups and ongoing information duplication should be scheduled,data backups,information duplication,Regular,ongoing,RDC
+45,Monitoring system effectiveness and evaluating system performance are key aspects,Monitoring system,evaluating system,effectiveness,performance,RDC
+46,Email notifications and text alerts need to convey urgent messages promptly,Email,text,notifications,alerts,RDC
+47,User activity logs and operation history records must be easily accessible,activity logs,history records,User,operation,RDC
+48,Error messages should be clear and failure notices must be understandable,messages,notices,Error,failure,RDC
+49,A data restoration feature and a system recovery tool shall be integral components,restoration feature,recovery tool,data,system,RDC
+50,A streamlined checkout process and a straightforward payment mechanism are to be developed,checkout process,payment mechanism,streamlined,straightforward,RDC
+51,The system shall maintain a user profile and the user's preferences shall also be stored.,system,system,user profile,user's preferences,RDC
+52,"Notification and alerts shall be generated, and the system should also create reminders for the user.",system,system,notifications,alerts,RDC
+53,"Data backup will be performed automatically, and the system additionally ensures data replication for safety.",system,system,data backup,data replication,RDC
+54,The user can upload documents as well as files to their account.,user,user,documents,files,RDC
+55,The application shall track the location and also follow the movement of the individual.,application,application,track location,movement,RDC
+56,The report will include financial statistics and will also comprise economic data.,report,report,financial statistics,economic data,RDC
+57,"The tool generates a summary and in addition, it produces a concise abstraction of the data.",tool,tool,summary,abstraction,RDC
+58,Access rights are granted to users and permissions are also assigned to individuals.,system,system,access rights,permissions,RDC
+59,The device shall have a screen saver and will also feature a display lock for security.,device,device,screen saver,display lock,RDC
+60,The module computes the total and likewise calculates the sum of the transactions.,module,module,total,sum,RDC
+61,"User credentials comprise username and password, but also include login information.",credentials,credentials,username and password,login information,RDC
+62,"Error messages will be logged, and the system will record faults as well.",system,system,error messages,faults,RDC
+63,The database stores customer details and equally archives client information.,database,database,customer details,client information,RDC
+64,Administrators can edit settings and can also modify the configurations.,administrators,administrators,edit settings,modify configurations,RDC
+65,Search results will show relevant articles as well as display pertaining literature.,search results,search results,relevant articles,pertaining literature,RDC
+66,Backup files must be encrypted and security must also be applied to the backup archives.,Backup files,backup archives,encrypted,security,RDC
+67,The user interface should be intuitive and the interface should also be user-friendly.,user interface,interface,intuitive,user-friendly,RDC
+68,The process will audit transactions and will also perform an examination of records.,process,process,audit transactions,examination of records,RDC
+69,The email feature includes an inbox and also has a message receiving function.,email feature,email feature,inbox,message receiving function,RDC
+70,Graphs present trends while charts also exhibit patterns.,Graphs,charts,trends,patterns,RDC
+71,The firewall blocks unauthorized access but also impedes unapproved entry.,firewall,firewall,blocks,impedes,RDC
+72,The server synchronizes data and also aligns the information across the network.,server,server,synchronizes data,aligns information,RDC
+73,The calendar function supports date setting and also assists with scheduling events.,calendar function,calendar function,date setting,scheduling events,RDC
+74,System users can initiate processes and can further commence operations.,system users,system users,initiate processes,commence operations,RDC
+75,The user guide explains features and also elucidates functionalities.,user guide,user guide,explains features,elucidates functionalities,RDC
+76,"Messages can be archived or alternatively, they can be saved for later review.",Messages,Messages,archived,saved for later review,RDC
+77,The analytics module calculates risk factors and also estimates potential threats.,analytics module,analytics module,calculates risk factors,estimates potential threats,RDC
+78,The administrator can delete records and is also able to remove entries.,administrator,administrator,delete records,remove entries,RDC
+79,The schedule features time slots and additionally includes periods for activities.,schedule,schedule,time slots,periods for activities,RDC
+80,Maintenance tasks are recorded by the system and it also logs upkeep activities.,system,system,maintenance tasks,upkeep activities,RDC
+81,Invoices show amounts due and likewise display the payable sum.,Invoices,Invoices,amounts due,payable sum,RDC
+82,Detection algorithms find patterns and they also identify regularities.,Detection algorithms,Detection algorithms,find patterns,identify regularities,RDC
+83,The printer outputs documents and moreover it produces hard copies.,printer,printer,outputs documents,produces hard copies,RDC
+84,The application can reset passwords or additionally enable a password recovery option.,application,application,reset passwords,password recovery option,RDC
+85,The data model includes entities and it also encompasses object types.,data model,data model,entities,object types,RDC
+86,Client accounts show transaction history as well as present a record of financial operations.,Client accounts,Client accounts,transaction history,record of financial operations,RDC
+87,Software updates can be downloaded and also can be retrieved by the user.,Software updates,Software updates,downloaded,retrieved,RDC
+88,Automated emails will confirm registration and also acknowledge signup processes.,Automated emails,Automated emails,confirm registration,acknowledge signup,RDC
+89,Search features require keywords or alternatively demand search terms.,Search features,Search features,require keywords,demand search terms,RDC
+90,User preferences include color schemes and also cover layout selections.,User preferences,User preferences,color schemes,layout selections,RDC
+91,Safety measures include firewalls and they also involve antivirus software.,Safety measures,Safety measures,firewalls,antivirus software,RDC
+92,The digital assistant responds to voice commands and also reacts to spoken instructions.,digital assistant,digital assistant,responds to voice commands,reacts to spoken instructions,RDC
+93,Feedback forms collect customer opinions and also gather user feedback.,Feedback forms,Feedback forms,collect customer opinions,gather user feedback,RDC
+94,The billing system processes invoices and also handles billing statements.,billing system,billing system,processes invoices,handles billing statements,RDC
+95,Financial reports summarize revenue and also encapsulate income details.,Financial reports,Financial reports,summarize revenue,encapsulate income details,RDC
+96,Security protocols enforce rules and additionally implement regulations.,Security protocols,Security protocols,enforce rules,implement regulations,RDC
+97,The scanner digitizes documents and it also converts papers into electronic format.,scanner,scanner,digitizes documents,converts papers,RDC
+98,Chatbots provide assistance or also offer help through conversation.,Chatbots,Chatbots,provide assistance,offer help,RDC
+99,The cloud service stores data online and it also houses information on remote servers.,cloud service,cloud service,stores data online,houses information,RDC
+100,The authentication process verifies identity and also confirms user credentials.,authentication process,authentication process,verifies identity,confirms user credentials,RDC
