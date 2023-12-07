@@ -21,7 +21,7 @@ class LLMDatasetMgr:
         self.dataset = pd.read_csv(file_path)
         self.dataset_columns = ', '.join(self.dataset.columns.tolist())
 
-    def add_data(self, context, model="gpt-4-1106-preview", num_samples=1, max_tokens=2000):
+    def add_data(self, context, model="gpt-4-1106-preview", num_samples=1, max_tokens=4096):
         self.dataset_description = f"I have a dataset with columns: {self.dataset_columns}. Your task is to add {num_samples} more row(s) of data to this dataset. Provide the data as a json object, which should match the structure of the dataset. Wrap the entire response in a json object with the key 'data'."
         print(f"\nDataset Description: {self.dataset_description}")
         response = self.client.chat.completions.create(
@@ -35,11 +35,10 @@ class LLMDatasetMgr:
             ]
         )
         response_text = response.choices[0].message.content
+        if response.choices[0].finish_reason == "length":
+            raise ValueError("Generation exceeded max_tokens or conversation exceeded token limit. Response will not parse into a valid JSON object.")
         print(f"\nResponse: {response_text}")
         self.save_data(response_text)
-
-    def process_data(self, generated_data):
-        pass
 
     def save_data(self, json_response):
         if not self.dataset_path:
@@ -51,8 +50,14 @@ class LLMDatasetMgr:
             raise ValueError("Invalid JSON response format. Expected a 'data' key with a list of entries.")
 
         new_rows = []
+        next_id = 1
+        if 'ID' in self.dataset.columns and not self.dataset.empty:
+            next_id = self.dataset['ID'].max() + 1
+
         for entry in json_response['data']:
-            # Create a new row and append to the list
+            if 'ID' in self.dataset.columns:
+                entry['ID'] = next_id
+                next_id += 1
             new_row = pd.DataFrame({**{key: [value] for key, value in entry.items()}})
             new_rows.append(new_row)
 

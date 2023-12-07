@@ -33,5 +33,5 @@ dataset.add_data(context=dataset_context, num_samples=20)
 - The `num_samples` parameter is the number of data samples to generate and add to the dataset
 
 ### How It Works
-The `LLMDatasetMgr` class is designed to manage a dataset and interact with the OpenAI API to generate new data entries. By leveraging the new JSON Mode in the OpenAI API and the `gpt-4-1106-preview` model, we can generate new data entries (as JSON Objects) that match the structure of a given dataset, and easily append them to the dataset.
+The `LLMDatasetMgr` class is designed to manage a dataset and interact with the OpenAI API to generate new data entries. By leveraging the JSON Mode in the OpenAI API and the `gpt-4-1106-preview` or `gpt-3.5-turbo-1106` model, we can generate new data entries (as JSON Objects) that match the structure of a given dataset, and easily append them to the dataset.
 
