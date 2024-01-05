@@ -3,7 +3,7 @@ from openai import OpenAI
 import pandas as pd
 import json
 
-class LLMDatasetMgr:
+class LLMDataset:
     def __init__(self, api_key=None, dataset_path=None):        
         self.api_key = api_key or os.getenv("OPENAI_API_KEY")
         if not self.api_key:
@@ -61,10 +61,8 @@ class LLMDatasetMgr:
             new_row = pd.DataFrame({**{key: [value] for key, value in entry.items()}})
             new_rows.append(new_row)
 
-        # Concatenate all new rows to the existing dataset
         self.dataset = pd.concat([self.dataset] + new_rows, ignore_index=True)
         self.dataset.to_csv(self.dataset_path, index=False)
 
     def print_attributes(self):
         print(f"\nDatset Columns: {self.dataset_columns}")
-

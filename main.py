@@ -1,12 +1,11 @@
 from dotenv import load_dotenv
 from utils import *
-from llm_dataset_mgr import LLMDatasetMgr
+from llm_dataset_gen import LLMDataset
 
-if __name__ == "__main__":
+def main():
     load_dotenv()
 
     # To create an empty dataset, use the create_dataset.py script
-
     definitions = {
         "symbol": "A Symbol (represented as SY) is a Noun or set of nouns acting as a substantial representation of the concept meant. The symbol stands for and represents the concept.",
         "concept": "A Concept (represented as CO) is a Noun or set of nouns introducing new intrinsic or mutual properties.",
@@ -20,10 +19,11 @@ if __name__ == "__main__":
     # However, you should also provide an additional context whenever calling add_data, which further describes the data that should be added to the dataset
     dataset_context = f"For Context, the dataset represents requirements engineering excerpts and their corresponding Language Construct (LC) and Language Quality (LQ) codings, as described by a research paper titled 'Language quality in requirements development: tracing communication in the process of information systems development'. Language Construct (LC) represents the linguistic construction of a symbol-concept relationship that can be observed during the language development process. LC Codings may contain concepts (CO) and symbols (SY). {definitions['concept']} {definitions['symbol']} The LC Codings are represented by the 'SY1, SY2, CO1, and CO2' columns in the dataset. However, the generated data does not necessarily need to have 2 symbols and 2 concepts, and if that is the case, leave the corresponding entry empty. The dataset contains 4 types of language quality issues: incompleteness (INC), meaningless (MLN), redundancy (RDC), and ambiguity (AMB). For the generated data, ensure the Language Quality (LQ Code) is 'ambiguity'. {definitions['ambiguity']} Ensure each generated Excerpt is unique."
     
-    for _ in range(12):
-        data_filepath = "./data/LC_Dataset3.csv"
-        dataset = LLMDatasetMgr(dataset_path=data_filepath)
-        dataset.print_attributes()
-        print(f"\nDataset Context: {dataset_context}")
+    data_filepath = "./data/LC_Dataset3.csv"
+    dataset = LLMDataset(dataset_path=data_filepath)
+    dataset.print_attributes()
+    print(f"\nDataset Context: {dataset_context}")
+    dataset.add_data(context=dataset_context, num_samples=40)
 
-        dataset.add_data(context=dataset_context, num_samples=40)
+if __name__ == "__main__":
+    main()
